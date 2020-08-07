@@ -4,7 +4,7 @@ import os
 import logging
 import unittest
 
-logging.basicConfig(filename='myproject_log.txt',format='Date-Time : %(asctime)s : Module name : %(levelname)s : Function name : %(funcName) : Line No. : %(lineno)d - %(message)s', \
+logging.basicConfig(filename='myproject_log.txt',format='%(asctime)s : %(filename)s : %(funcName)s : %(levelname)s :  %(lineno)d - %(message)s', \
                     level = logging.DEBUG)
 
 class Testcase1(unittest.TestCase):
@@ -23,5 +23,6 @@ class Testcase1(unittest.TestCase):
 
     def tearDown(self):
         self.file.close()
+        pass
 
 unittest.main()
