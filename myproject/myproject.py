@@ -19,7 +19,7 @@ class Testcase1(unittest.TestCase):
             if exit_code:
                 logging.info('succesfully uninstalled all libraries in requirements.txt file.')
             else:
-                logging.error('Error occured while uninstalling some libraties in requiremets.txt.')
+                logging.error(' Error occured while uninstalling some libraties in requiremets.txt.')
 
     def tearDown(self):
         self.file.close()
